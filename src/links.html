@@ -12,37 +12,23 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="bg-slate-400">
+  <body class="bg-slate-400 flex flex-col min-h-screen">
     <nav
       class="flex flex-row justify-between items-center bg-stone-800 text-white h-16"
     >
       <div class="left ml-8"><a href="index.html">Logo</a></div>
-      <div class="right">
-        <button class="flex justify-between items-center p-8 sm:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="sm:flex sm:justify-between sm:items-center sm:p-8 hidden">
-          <li class="mx-4">
-            <a href="cars.html">Cars</a>
-          </li>
-          <li class="mx-4">
-            <a href="about.html">About</a>
-          </li>
-          <li class="mx-4">
-            <a href="links.html">Links</a>
-          </li>
-        </ul>
-      </div>
     </nav>
-    <main class="flex flex-col mt-20 items-center">
+    <main class="flex flex-col mt-20 items-center flex-1">
       <h1 class="text-6xl font-bold mb-16">Links</h1>
       <section class="mx-10">
         <article class="bg-slate-500 mb-10 p-10 pl-2 rounded-xl">
           <h3 class="text-xl font-bold mb-4 ml-2">Images</h3>
           <p>
             All images have been created using:
-            <a class="text-amber-300" href="https://www.bing.com/images/create">
-              Bing Image Creator</a
+            <a
+              class="text-amber-300 transition-all duration-500 hover:text-xl hover:font-bold"
+              href="https://www.bing.com/images/create"
+              >Bing Image Creator</a
             >
           </p>
         </article>
@@ -51,12 +37,46 @@
           <p>
             Some text like the car description and names have been created
             using:
-            <a class="text-amber-300" href="https://chat.openai.com/">
-              ChatGPT</a
+            <a
+              class="text-amber-300 transition-all duration-500 hover:text-xl hover:font-bold"
+              href="https://chat.openai.com/"
+              >ChatGPT</a
+            >
+          </p>
+        </article>
+        <article class="bg-slate-500 mb-10 p-10 pl-2 rounded-xl">
+          <h3 class="text-xl font-bold mb-4 ml-2">Videos</h3>
+          <p>
+            Video showing how to use Imagemin
+            <a
+              class="text-amber-300 transition-all duration-500 hover:text-xl hover:font-bold"
+              href="https://youtu.be/LrHiJFvSbM8"
+              >Video Link</a
+            >
+          </p>
+          <p class="mt-4">
+            Video showing manual image optimization
+            <a
+              class="text-amber-300 transition-all duration-500 hover:text-xl hover:font-bold"
+              href="https://youtu.be/mhgFctML9K8"
+              >Video Link</a
             >
           </p>
         </article>
       </section>
     </main>
+    <footer
+      class="flex flex-row justify-between items-center bg-stone-800 text-white w-full h-16 pb-7 fixed bottom-0"
+    >
+      <div class="right flex w-full mb-0">
+        <ul
+          class="sm:flex sm:justify-evenly sm:items-center sm:p-8 sm:pb-0 hidden w-full pb-0"
+        >
+          <li class="mx-4 hover-spin"><a href="cars.html">Cars</a></li>
+          <li class="mx-4 hover-spin"><a href="about.html">About</a></li>
+          <li class="mx-4 hover-spin"><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>

@@ -10,34 +10,24 @@
       src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .custom-clip {
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+      }
+    </style>
   </head>
   <body class="bg-slate-400">
     <nav
       class="flex flex-row justify-between items-center bg-stone-800 text-white h-16"
     >
       <div class="left ml-8"><a href="index.html">Logo</a></div>
-      <div class="right">
-        <button class="flex justify-between items-center p-8 sm:hidden">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-        <ul class="sm:flex sm:justify-between sm:items-center sm:p-8 hidden">
-          <li class="mx-4">
-            <a href="cars.html">Cars</a>
-          </li>
-          <li class="mx-4">
-            <a href="about.html">About</a>
-          </li>
-          <li class="mx-4">
-            <a href="links.html">Links</a>
-          </li>
-        </ul>
-      </div>
     </nav>
     <main class="mt-20 flex flex-col items-center">
       <h1 class="text-6xl font-bold mb-8">About us</h1>
+      <!-- Afegit la classe .custom-clip per aplicar el clip-path -->
       <img
-        class="w-[70%] mb-16 md:w-[50%] lg:w-[40%] xl:w-[30%] md:mb-14 rounded-xl"
-        src="./img/about.jpeg"
+        class="w-[70%] mb-16 md:w-[50%] lg:w-[40%] xl:w-[30%] md:mb-14 rounded-xl custom-clip"
+        src="./img/about/about.webp"
         alt="About Us"
       />
       <section class="w-[70%] mb-28">
@@ -79,9 +69,22 @@
           through the world of luxury that only Vila's Dealership can provide.
           <br />
           <br />
-          Vila's Dealership - Where Dreams Drive Home.
+          <b>Vila's Dealership - Where Dreams Drive Home.</b>
         </p>
       </section>
     </main>
+    <footer
+      class="flex flex-row justify-between items-center bg-stone-800 text-white w-full h-16 pb-7"
+    >
+      <div class="right flex w-full mb-0">
+        <ul
+          class="sm:flex sm:justify-evenly sm:items-center sm:p-8 sm:pb-0 hidden w-full pb-0"
+        >
+          <li class="mx-4 hover-spin"><a href="cars.html">Cars</a></li>
+          <li class="mx-4 hover-spin"><a href="about.html">About</a></li>
+          <li class="mx-4 hover-spin"><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
